@@ -1,0 +1,7 @@
+[Unit]
+Description=Lazy hello script daemon
+[Service]
+ExecStart=/bin/bash /usr/local/bin/script1.sh
+[Install]
+WantedBy=multi-user.target
+
