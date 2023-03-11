@@ -1,0 +1,13 @@
+dd if=/dev/zero of=/tmp/disk.img bs=512 count=40000
+sudo losetup -f
+sudo losetup /dev/loop21 /tmp/disk.img 
+sudo fdisk /dev/loop21
+sudo partprobe /dev/loop21
+cat /proc/partitions 
+sudo mkfs.ext4 /dev/loop21p1
+sudo mount /dev/loop21p1 /mnt
+sudo touch file1.txt file2.txt
+sudo umount /mnt 
+apt search gparted
+sudo apt install gparted
+
