@@ -1,0 +1,25 @@
+Lab objectives:
+	
+Using Loop devices, create 4  PVs
+	
+create VG and add 3 on PVs to it
+	
+create LV which has size of 250M
+	
+format LV using ext4
+	
+mount LV into /mnt directory
+	
+extend VG with the remaining PV
+	
+extend LV with +50M
+	
+resize2fs LV with the 50M extra
+
+Network:
+
+Display the network interface information using ip command
+	
+Display currently active TCP connections on your OS using netstatcommand
+	
+Display currently open ports on your system using nmap command (install it using apt)
